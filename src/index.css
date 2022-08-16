@@ -105,6 +105,7 @@ header {
   display: flex;
   align-items: center;
   border-bottom: 1px solid var(--dark);
+  height: 85px;
 }
 
 header h2 {
@@ -168,6 +169,7 @@ li {
 
 nav {
   width: 75%;
+  height: 100%;
 }
 
 nav a:hover {
@@ -192,11 +194,14 @@ textarea {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
 }
 
 .flex-row {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .space-between {
@@ -264,20 +269,120 @@ textarea {
   cursor: pointer;
 }
 
+.dropdown {
+  /* position: relative;
+  display: inline-block; */
+}
+
+nav ul {
+  height: 100%;
+}
+
+nav ul li:hover {
+  border: 1px solid black;
+}
+
+nav ul li a:hover {
+  color: var(--secondary);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 64px;
+  background-color: var(--light);
+  min-width: 350px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content ul {
+  padding-left: 0;
+}
+
+.dropdown-content li {
+  border: 1px solid var(--dark);
+  padding-left: 10px;
+}
+
+.dropdown-content li:hover {
+  background-color: #ddd;
+}
+
+.dropdown-content a:hover {
+  color: var(--secondary);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 /* Utility Classes End */
+
+/* Header Classes Start */
+
+.header-logo {
+  max-width: 25%;
+  max-height: 100%;
+}
+
+.header-logo img {
+  max-height: 100%;
+}
+
+/* Header Classes End */
+
+/* Nav Classes Start */
+
+nav ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+nav ul li {
+  display: flex;
+  height: 100%;
+}
+
+nav ul li a {
+  /* margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate((-50%, -50%)); */
+  display: flex;
+  align-items: center;
+}
+
+/* Nav Classes End */
 
 /* Hero Classes Start */
 
 .hero {
-  max-width: 100%;
-  height: auto;
-  margin-top: 0;
+  position: relative;
+  text-align: center;
 }
 
-.hero-img {
-  margin: 0;
-  /* max-height: 35vw; */
+.hero img {
+  object-fit: cover;
+  object-position: 50% 90%;
   width: 100%;
+  height: auto;
+  max-height: 35vh;
+  filter: brightness(70%);
+}
+
+.hero p {
+  background-color: rgba(0, 0, 0, 0.35);
+  color: var(--light);
+  padding: 1.5vw 1.5vw;
+  border: 1px solid var(--light);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 50%;
+  font-size: xx-large;
 }
 
 /* Hero Classes End */
