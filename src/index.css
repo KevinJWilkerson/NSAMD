@@ -23,6 +23,7 @@ main {
   --dark: #000000;
   --darker: #111111;
   --error: rgb(228, 46, 1);
+  --spacing-half: calc(1rem * 0.25);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
   --spacing-five: calc(2.5rem);
@@ -40,7 +41,6 @@ body {
 body {
   margin: 0;
   padding: 0;
-  font-weight: 600;
   line-height: 1.5;
   font-size: 18px;
   letter-spacing: 0.1em;
@@ -93,7 +93,6 @@ p {
 a {
   color: var(--tertiary);
   text-decoration: none;
-  font-weight: bold;
 }
 
 a:hover {
@@ -104,7 +103,7 @@ header {
   background: var(--light);
   display: flex;
   align-items: center;
-  border-bottom: 1px solid var(--dark);
+  border-bottom: 2px solid var(--dark);
   height: 85px;
 }
 
@@ -117,19 +116,16 @@ header a {
 }
 
 button {
-  font-size: 1rem;
-  text-decoration: none;
+  font-family: "Quattrocento-Regular";
+  font-size: 1.25rem;
   padding: 0.25rem 1rem;
-  border-radius: 0.5rem;
   border: none;
-  outline: none;
-  cursor: pointer;
-  margin: 0 1px;
-  background-color: var(--secondary);
+  background-color: var(--light);
 }
 
 button:hover {
-  opacity: 0.8;
+  background-color: #ddd;
+  color: var(--secondary);
 }
 
 button[disabled] {
@@ -289,15 +285,81 @@ nav ul li a:hover {
 .dropdown-content {
   display: none;
   position: absolute;
-  top: 64px;
-  background-color: var(--light);
+  top: 84px;
   min-width: 350px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  z-index: 9999;
+  opacity: 1;
 }
 
-.dropdown-content ul {
-  padding-left: 0;
+.dropdown-content li {
+  background-color: var(--light);
+}
+
+@keyframes scaleZ {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  80% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.phys-1 {
+  transform-origin: top left;
+  animation: scaleZ 60ms ease-in-out forwards;
+}
+
+.phys-2 {
+  transform-origin: top left;
+  animation: scaleZ 120ms ease-in-out forwards;
+}
+
+.phys-3 {
+  transform-origin: top left;
+  animation: scaleZ 180ms ease-in-out forwards;
+}
+
+.phys-4 {
+  transform-origin: top left;
+  animation: scaleZ 240ms ease-in-out forwards;
+}
+
+.phys-5 {
+  transform-origin: top left;
+  animation: scaleZ 300ms ease-in-out forwards;
+}
+
+.phys-6 {
+  transform-origin: top left;
+  animation: scaleZ 360ms ease-in-out forwards;
+}
+
+.phys-7 {
+  transform-origin: top left;
+  animation: scaleZ 420ms ease-in-out forwards;
+}
+
+.phys-8 {
+  transform-origin: top left;
+  animation: scaleZ 480ms ease-in-out forwards;
+}
+
+.phys-9 {
+  transform-origin: top left;
+  animation: scaleZ 540ms ease-in-out forwards;
+}
+
+.phys-10 {
+  transform-origin: top left;
+  animation: scaleZ 600ms ease-in-out forwards;
 }
 
 .dropdown-content li {
@@ -317,6 +379,12 @@ nav ul li a:hover {
   display: block;
 }
 
+.dropdown-menu-scale {
+}
+
+.phys-1 {
+}
+
 /* Utility Classes End */
 
 /* Header Classes Start */
@@ -327,7 +395,7 @@ nav ul li a:hover {
 }
 
 .header-logo img {
-  max-height: 100%;
+  max-height: 80px;
 }
 
 /* Header Classes End */
@@ -382,7 +450,7 @@ nav ul li a {
   left: 50%;
   transform: translate(-50%, -50%);
   min-width: 50%;
-  font-size: xx-large;
+  font-size: 1.25em;
 }
 
 /* Hero Classes End */
@@ -413,27 +481,30 @@ nav ul li a {
   margin-bottom: 25px;
 }
 
-button {
-  background: var(--primary);
-  border: 0;
-  border-radius: 5px;
-  color: #fff;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 30px;
-  padding: 10px 15px;
-}
-
-a {
-  border-radius: 5px;
-  color: var(--primary);
-  font-weight: 600;
-  padding: 2px 4px;
-  margin-left: -2px;
-  margin-right: -2px;
-}
-
 .navActive {
   color: var(--secondary);
+}
+
+/* MEDIA QUERY FIRST BREAKPOINT */
+@media screen and (max-width: 990px) {
+  header {
+    height: 70px;
+  }
+
+  header .px-2 {
+    padding-right: var(--spacing-one);
+    padding-left: var(--spacing-one);
+  }
+}
+
+/* MEDIA QUERY FIRST BREAKPOINT */
+@media screen and (max-width: 870px) {
+  header {
+    height: 70px;
+  }
+
+  header .px-2 {
+    padding-right: var(--spacing-half);
+    padding-left: var(--spacing-half);
+  }
 }

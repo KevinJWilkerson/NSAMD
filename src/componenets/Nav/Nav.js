@@ -10,54 +10,52 @@ const Nav = () => {
 
       <nav>
         <ul className="flex-row flex-end space-between">
-          <li className="px-2">
-            <a>Home</a>
+          <li className="">
+            <button>Home</button>
           </li>
-          <li className="px-2 dropdown">
-            <a className="dropdown">Physicians</a>
+          <li className="dropdown">
+            <button className="dropdown">Physicians</button>
             <div className="dropdown-content">
-              <ul>
-                <li>
-                  <a>Mark V. Reichman, MD</a>
-                </li>
-                <li>
-                  <a>Charles C. Rich, MD</a>
-                </li>
-                <li>
-                  <a>Peter H. Maughan, MD</a>
-                </li>
-                <li>
-                  <a>Paul A. House, MD</a>
-                </li>
-                <li>
-                  <a>Nam K. Yoon, MD</a>
-                </li>
-                <li>
-                  <a>Christopher G. Wilkerson, MD</a>
-                </li>
-                <li>
-                  <a>Dave J. Kotter, APRN</a>
-                </li>
-                <li>
-                  <a>Lori E. Passey, APRN</a>
-                </li>
-                <li>
-                  <a>Holly K. Cushing, PA-C</a>
-                </li>
-                <li>
-                  <a>Karissa Jackson, APRN-C</a>
-                </li>
-              </ul>
+              <li className="phys-1">
+                <a>Mark V. Reichman, MD</a>
+              </li>
+              <li className="phys-2">
+                <a>Charles C. Rich, MD</a>
+              </li>
+              <li className="phys-3">
+                <a>Peter H. Maughan, MD</a>
+              </li>
+              <li className="phys-4">
+                <a>Paul A. House, MD</a>
+              </li>
+              <li className="phys-5">
+                <a>Nam K. Yoon, MD</a>
+              </li>
+              <li className="phys-6">
+                <a>Christopher G. Wilkerson, MD</a>
+              </li>
+              <li className="phys-7">
+                <a>Dave J. Kotter, APRN</a>
+              </li>
+              <li className="phys-8">
+                <a>Lori E. Passey, APRN</a>
+              </li>
+              <li className="phys-9">
+                <a>Holly K. Cushing, PA-C</a>
+              </li>
+              <li className="phys-10">
+                <a>Karissa Jackson, APRN-C</a>
+              </li>
             </div>
           </li>
-          <li className="px-2">
-            <a>Resources</a>
+          <li className="">
+            <button>Resources</button>
           </li>
-          <li className="px-2">
-            <a>Patient Portal</a>
+          <li className="">
+            <button>Patient Portal</button>
           </li>
-          <li className="px-2">
-            <a>Contact Us</a>
+          <li className="">
+            <button>Contact Us</button>
           </li>
         </ul>
       </nav>
