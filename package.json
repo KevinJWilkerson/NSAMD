@@ -1,5 +1,5 @@
 {
-  "homepage": "http://kevinjwilkerson.github.io/nsamd",
+  "homepage": "https://kevinjwilkerson.github.io/nsamd",
   "name": "nsamd",
   "version": "0.1.0",
   "private": true,
@@ -12,9 +12,9 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
-  "scripts": {    
+  "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build",
+    "deploy": "gh-pages -b main -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
