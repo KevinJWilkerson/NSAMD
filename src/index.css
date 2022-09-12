@@ -141,9 +141,9 @@ span[role="img"] {
   cursor: default;
 }
 
-form {
+/* form {
   width: 40%;
-}
+} */
 
 input {
   font-size: 1rem;
@@ -454,6 +454,191 @@ nav ul li a {
 }
 
 /* Hero Classes End */
+
+/* About Classes Start */
+
+.carousel {
+  overflow: hidden;
+}
+
+.inner {
+  margin-top: 20px;
+  white-space: nowrap;
+  transition: transform 0.3s;
+}
+
+.carousel-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  color: var(--dark);
+}
+
+.indicators {
+  display: flex;
+  justify-content: center;
+}
+
+.indicators > button {
+  margin: 5px;
+}
+
+.indicators > button.active {
+  font-weight: bolder;
+  color: var(--dark);
+}
+
+.headshot {
+  height: 100%;
+}
+
+.bio {
+  width: 50%;
+  margin-left: 1em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bio h3 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.bio p {
+  white-space: initial;
+}
+
+.speciality {
+  max-width: 10px;
+}
+
+/* About Classes End */
+
+/* Info Classes Start */
+
+.info {
+  height: fit-content;
+  background-color: rgb(235, 235, 235);
+  margin: 15px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.info p {
+  margin: 15px;
+}
+
+.conditions {
+  width: 40%;
+  font-size: 0.9em;
+}
+
+.conditions ul li {
+  list-style: circle;
+}
+
+/* Info Classes End */
+
+/* Contact Classes Start */
+
+.contact {
+  background-color: var(--light);
+}
+
+.contact h2 {
+  color: var(--light);
+  border-color: var(--primary);
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-info > * {
+  flex: 1;
+  margin: 15px;
+}
+
+.contact-info iframe {
+  height: 400px;
+}
+
+.contact-info div {
+  color: var(dark);
+}
+
+.contact-info h3 {
+  color: var(dark);
+  font-size: 32px;
+}
+
+.contact-info p,
+.contact-info address {
+  margin: 20px 0;
+  line-height: 1.5;
+  font-size: 16px;
+  font-style: normal;
+}
+
+.contact-form input,
+.contact-form textarea {
+  border: 1px solid var(dark);
+  border-radius: 10px;
+  display: block;
+  padding: 7px 15px;
+  font-size: 16px;
+  color: var(dark);
+  background-color: rgba(255, 255, 255, 0.75);
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  background-color: rgba(255, 255, 255, 1);
+  outline: none;
+}
+
+.contact-form button {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 15px 0;
+  font-size: 16px;
+}
+
+.contact-form button:hover {
+  color: var(--primary-color);
+  background: var(--tertiary-color);
+}
+
+.contact-info a {
+  color: var(--primary-color);
+}
+
+/* Contact Classes End */
+
+/* Footer Classes Start */
+
+.footer {
+  margin-top: 15px;
+  border-top: 1px solid black;
+  padding-top: 10px;
+  justify-content: space-around;
+}
+
+.footer p {
+  width: fit-content;
+}
+
+/* Footer Classes End */
 
 .modalBackdrop {
   background: rgba(0, 0, 0, 0.65);
